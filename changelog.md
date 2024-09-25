@@ -1,3 +1,10 @@
+# 2.1.0
+
+- Added styling for the following components added in `@jtjs/react@2.0.0`:
+  - `ImageCarouselWithFullView`
+  - `CarouselWithFullView`
+  - `FullImageFileInput`
+
 # 2.0.0
 
 - Internal adjustments and improvements, no breaking changes.
