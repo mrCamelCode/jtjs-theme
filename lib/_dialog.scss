@@ -14,13 +14,17 @@
   @include rounded-corners;
   @include soft-shadow;
 
-  animation: jtjs-anim_pop 0.4s linear;
+  animation: jtjs-anim_fade-in 0.2s linear forwards;
 
   outline: none;
   border: none;
   overflow: hidden;
 
   background-color: var(--jtjs-theme-background);
+
+  &::backdrop {
+    animation: jtjs-anim_backdrop-blur-in 0.2s linear forwards;
+  }
 
   @media only screen and (max-width: 600px) {
     width: 100%;

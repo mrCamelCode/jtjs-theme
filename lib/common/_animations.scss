@@ -62,6 +62,40 @@
   }
 }
 
+.jtjs-anim_backdrop-blur-in {
+  animation-name: jtjs-anim_backdrop-blur-in !important;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
+  @keyframes jtjs-anim_backdrop-blur-in {
+    from {
+      backdrop-filter: blur(0px);
+    }
+
+    to {
+      backdrop-filter: blur(10px);
+    }
+  }
+}
+
+.jtjs-anim_backdrop-blur-out {
+  animation-name: jtjs-anim_backdrop-blur-out !important;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
+  @keyframes jtjs-anim_backdrop-blur-out {
+    from {
+      backdrop-filter: blur(10px);
+    }
+
+    to {
+      backdrop-filter: blur(0px);
+    }
+  }
+}
+
 .jtjs-anim_pop {
   animation-name: jtjs-anim_pop !important;
   animation-duration: 0.4s;

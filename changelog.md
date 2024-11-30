@@ -1,3 +1,11 @@
+# 2.2.0
+
+- Changed default entry animation for dialogs.
+  - They'll now fade in and their backdrop will blur the items behind them.
+- Added animation classes: 
+  - .jtjs-anim_backdrop-blur-in
+  - .jtjs-anim_backdrop-blur-out
+
 # 2.1.0
 
 - Added styling for the following components added in `@jtjs/react@2.0.0`:
