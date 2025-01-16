@@ -1,3 +1,7 @@
+# 2.3.0
+
+- Removed mouse effect styling for buttons to be in line with `@jtjs/react@3.0.0`'s removal of that effect from the `Button` component.
+
 # 2.2.0
 
 - Changed default entry animation for dialogs.

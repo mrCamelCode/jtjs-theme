@@ -12,51 +12,12 @@
 
   overflow: hidden;
 
-  &:not(.jtjs-disable-mouse-effects) {
-    &::after {
-      $shineSize: 100px;
-
-      content: '';
-      position: absolute;
-      top: calc(var(--jtjs-mouse-pos-y, 0) * 1px - math.div($shineSize, 2));
-      left: calc(var(--jtjs-mouse-pos-x, 0) * 1px - math.div($shineSize, 2));
-      height: $shineSize;
-      width: $shineSize;
-      opacity: 0;
-      background: radial-gradient(
-        var(--jtjs-theme-button-lightened),
-        transparent 50%
-      );
-
-      transition: opacity 0.2s ease;
-    }
-    &:hover:not(:disabled) {
-      &::after {
-        opacity: 0.4;
-
-        &:active {
-          background: radial-gradient(
-            var(--jtjs-theme-button),
-            transparent 50%
-          );
-        }
-      }
-    }
-  }
-
   &:hover:not(:disabled) {
-    &.jtjs-disable-mouse-effects {
-      background-color: var(--jtjs-theme-button-lightened);
-      border-color: var(--jtjs-theme-button-darkened);
-    }
+    background-color: var(--jtjs-theme-button-lightened);
+    border-color: var(--jtjs-theme-button-darkened);
   }
   &:active:not(:disabled) {
     background-color: var(--jtjs-theme-button-darkened);
-
-    &.jtjs-disable-mouse-effects {
-      // Redundant for specificity. Without this, an active button as the above styling for hovering.
-      background-color: var(--jtjs-theme-button-darkened);
-    }
   }
   &:disabled {
     background-color: var(--jtjs-theme-disabled);
