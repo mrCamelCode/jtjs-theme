@@ -1,6 +1,6 @@
 {
   "name": "@jtjs/theme",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "license": "MIT",
   "description": "A theme library containing CSS that lets you hit the ground running when using JTJS components.",
   "type": "module",
@@ -13,12 +13,7 @@
   },
   "module": "./dist/style.css",
   "exports": {
-    ".": {
-      "import": {
-        "default": "./dist/style.css",
-        "style": "./dist/style.css"
-      }
-    }
+    ".": "./dist/style.css"
   },
   "style": "./dist/style.css",
   "scripts": {
